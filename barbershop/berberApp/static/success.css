@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+  }
+  
+  main {
+    flex-grow: 1;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .social-icons a {
+    color: #333;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .intro {
+    padding: 60px 0;
+    background-color: white;
+  }
+  
+  .intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+  .container-footer {
+    text-align: center;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .logo-wrapper {
+    max-width: 400px;
+  }
+  
+  .main-logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo-caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .success-section {
+    background-color: #d4edda;
+    padding: 50px 0;
+  }
+  
+  .success-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .success-section .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 20px;
+  }
+  
+  .success-section p {
+    font-size: 1.2rem;
+    color: #3c763d;
+    margin-top: 10px;
+  }
+  
+  h2.section-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+  }
+  

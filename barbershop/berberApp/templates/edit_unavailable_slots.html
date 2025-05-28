@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зміна календаря</title>
+    <link rel="stylesheet" href="{% static 'edit_unavailable_slots.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="unavailable-body">
+    <div class="container">
+        <h2 class="form-title">Оберіть дні, коли ви недоступні</h2>
+
+        <form method="post" class="unavailable-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save-button">Зберегти</button>
+        </form>
+
+        <div class="back-link">
+            <a href="{% url 'barber_dashboard' %}">← Назад до кабінету</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="{% static 'js/edit_unavailable_slots.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.social-icons a {
+  color: #333;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.intro {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.intro h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: white;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.logo-wrapper {
+  max-width: 400px;
+}
+
+.main-logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo-caption {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.about-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-text {
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.barbers-section {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+.barbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.barber-card {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.barber-photo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.barber-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.barber-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-book {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Кнопки */
+.btn-book1, .btn-return {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book1 {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-book1:hover {
+  background-color: #0056b3;
+}
+
+.btn-return {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-return:hover {
+  background-color: #45a049;
+}
+
+/* Секції */
+.booking-section, .success-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.booking-form input, .booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+
+/* Індикація вибраної та зайнятої години */
+.time-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.time-option {
+  background: #eee;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.time-option.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.time-option.occupied {
+  background-color: #f44336;
+  color: white;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.time-option:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.time-option input {
+  display: none;
+}
+
+.time-option input:checked + label {
+  background-color: #007bff;
+  color: white;
+}
+
+.time-option input[disabled] {
+  cursor: not-allowed;
+}
+
+/* Успіх */
+.success-section {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.success-section .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Барбери */
+.barber-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.barber-option:hover {
+  background-color: #f9f9f9;
+}
+
+.barber-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.barber-info {
+  flex-grow: 1;
+}
+
+.time-slots {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 16px;
+  margin: 5px 0;
+}

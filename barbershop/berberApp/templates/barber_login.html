@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вхід для Барбера</title>
+    <link rel="stylesheet" href="{% static 'barber_login.css' %}">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <h2 class="login-title">Вхід для Барбера</h2>
+        <form method="post" class="login-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="login-button">Увійти</button>
+        </form>
+    </div>
+</body>
+</html>

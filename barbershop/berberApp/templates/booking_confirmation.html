@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+            padding: 20px;
+        }
+        .email-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .booking-detail {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body style="background: #f6f6f6; padding: 20px;">
+<div class="email-container">
+    <h2>Дякуємо за ваш запис!</h2>
+    <p class="booking-detail"><strong>Послуга:</strong> {{ service }}</p>
+    <p class="booking-detail"><strong>Ціна:</strong> {{ price }} ₴</p>
+    <p class="booking-detail"><strong>Барбер:</strong> {{ barber }}</p>
+    <p class="booking-detail"><strong>Дата:</strong> {{ date }}</p>
+    <p class="booking-detail"><strong>Час:</strong> {{ time }}</p>
+    <p>До зустрічі у нашому барбершопі!</p>
+</div>
+</body>
+</html>

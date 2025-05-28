@@ -1,0 +1,17 @@
+asgiref==3.8.1
+cachetools==5.5.2
+certifi==2025.4.26
+charset-normalizer==3.4.2
+cssselect==1.3.0
+cssutils==2.11.1
+Django==5.2
+idna==3.10
+lxml==5.4.0
+more-itertools==10.7.0
+pillow==11.1.0
+premailer==3.10.0
+python-dotenv==1.1.0
+requests==2.32.3
+sqlparse==0.5.3
+tzdata==2025.2
+urllib3==2.4.0

@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мій Кабінет Барбера</title>
+    <link rel="stylesheet" href="{% static 'barberdashboard.css' %}">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <h2 class="dashboard-title">Мій Кабінет</h2>
+        <p class="welcome-text">Привіт, {{ request.user.barber.name }}! Ось всі твої майбутні бронювання:</p>
+
+        <table class="booking-table">
+            <thead>
+                <tr>
+                    <th>Послуга</th>
+                    <th>Ім'я клієнта</th>
+                    <th>Телефон</th>
+                    <th>Дата</th>
+                    <th>Час</th>
+                    <th>Дія</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for booking in bookings %}
+                    <tr>
+                        <td>{{ booking.service.service_name }}</td>
+                        <td>{{ booking.name }}</td>
+                        <td>{{ booking.phone }}</td>
+                        <td>{{ booking.date }}</td>
+                        <td>{{ booking.time }}</td>
+                        <td>
+                            <form method="post" action="{% url 'delete_booking' booking.id %}" style="display:inline;">
+                                {% csrf_token %}
+                                <button type="submit" onclick="return confirm('Ти впевнений, що хочеш видалити це бронювання?');">Видалити</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="6" class="empty-message">Немає бронювань на цей час.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="calendar-link">
+            <a href="{% url 'edit_unavailable_slots' %}" class="calendar-button">Змінити мій календар записів</a>
+        </div>
+    </div>
+</body>
+</html>

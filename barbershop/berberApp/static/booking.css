@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: black;
+  }
+  
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .social-icons a {
+    color: #333;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .intro {
+    padding: 60px 0;
+    background-color: white;
+  }
+  
+  .intro h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+  }
+  
+  footer {
+    background-color: white;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+
+  .container-footer {
+    text-align: center;
+  }
+
+  /* Кнопки */
+  .btn-book1, .btn-return {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-book1 {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-book1:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-return {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .btn-return:hover {
+    background-color: #45a049;
+  }
+  
+  /* Секції */
+  .booking-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .booking-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  /* Індикація вибраної та зайнятої години */
+  .time-select {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .time-option {
+    background: #eee;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .time-option.selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .time-option.occupied {
+    background-color: #f44336;
+    color: white;
+    text-decoration: line-through;
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  .time-option:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .time-option input:checked + label {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .time-option input[disabled] {
+    cursor: not-allowed;
+  }
+
+  .time-title {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .time-option input {
+    display: none;
+  }
+  
+  .time-option span {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .time-option input:checked + span {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .time-option input:disabled + span {
+    background-color: #f44336;
+    color: white;
+    text-decoration: line-through;
+    cursor: not-allowed;
+  }
+  
+  .time-option:not(:has(input:disabled)):hover span {
+    background-color: #0056b3;
+    color: white;
+  }
+
+  .time-option input[disabled] + span {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .time-option.occupied span {
+    color: #aaa;
+    text-decoration: line-through;
+  }
